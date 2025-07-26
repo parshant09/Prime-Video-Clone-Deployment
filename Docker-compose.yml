@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  amazon-prime:
+    image: amonkincloud/amazon-prime:latest
+    container_name: amazon-prime
+    ports:
+      - "3000:3000"
+    restart: unless-stopped
